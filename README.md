@@ -17,7 +17,7 @@ The foundation of this relationship is what is known as the Euler's Totient func
 ### Shamir Secret Sharing Principles
 The idea of Shamir Secret Sharing is to release the message, m, only if a cerntain number of users are present called the quorum. The secret message can be divided up into however many fragments, but as long as the quorum is met, then the secret can be released. The fragments are formed through system of linear equations taking the form: f(x) = $a_{q-1}x^{q-1}$ + ... + $a_ix$ + $a_0$ (mod N), where $a_0$ is the secret message, m.
 
-For example, it can be divided among 5 people with quorum = 3 in this manner:
+For example, it can be divided among 5 people with $q = 3$ (quorum) in this manner:
 1. f(1) = $a_2 + a_1 + a_0$ (mod N)
 2. f(2) = $4a_2 + 2a_1 + a_0$ (mod N)
 3. f(3) = $9a_2 + 3a_1 + a_0$ (mod N)
