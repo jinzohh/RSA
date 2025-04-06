@@ -5,7 +5,7 @@ Running this program requires pycryptodome library.
 ```
 pip install pycryptodome
 ```
-## RSA Principles
+### RSA Principles
 The basic idea of how RSA encryption/decryption works is the difficulty of factoring a very, very large number in a timely manner.
 The formula to encrypt is: $C$ = $m^e$ mod $N$, where C = ciphertext, m = message, e = public key, and $N$ = $p * q$ where p and q are very, very large prime numbers.
 The formula to decrypt is: $D$ = $C^d$ mod $N$, where D = decrypted message (or m) and d = private key.
